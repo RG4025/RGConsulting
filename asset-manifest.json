@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/RGConsulting/static/css/main.f94f7e77.css",
+    "main.js": "/RGConsulting/static/js/main.7e11e025.js",
+    "index.html": "/RGConsulting/index.html",
+    "main.f94f7e77.css.map": "/RGConsulting/static/css/main.f94f7e77.css.map",
+    "main.7e11e025.js.map": "/RGConsulting/static/js/main.7e11e025.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f94f7e77.css",
+    "static/js/main.7e11e025.js"
+  ]
+}

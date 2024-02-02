@@ -1,0 +1,518 @@
+
+/* 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+li{
+  list-style-type: none;
+  padding: 0px;
+  margin: 1px 10px;
+}
+
+.navbar_first{
+  background-color: #0C3C60;
+  color: white;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  transition: all ease 1s;
+}
+#main_nav_fix{
+  transition: all ease 1s;
+  top: -100px;
+
+}
+/* .main_contact{
+  margin-top: 100px;
+} */
+.main_class {
+  height: 0px;
+  display: none;
+}
+
+.main_class2{
+  height: 100vh;
+  display: block;
+}
+
+/* .back_image_one{
+  background-image: url(./images/image2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+} */
+
+.back_image_one{
+  position: relative;
+}
+
+.back_image_one img{
+  width: 100%;;
+  height: 100vh;
+}
+
+.section_one_div{
+  position: absolute;
+  top:70%;
+  /* left:30%; */
+
+}
+
+.section_one_div p{
+  font-size: 19px;
+  margin: 10px 0px 25px 0px;
+
+}
+.section_one_div h1{
+  font-size: 30px;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  margin: 30px 0px 35px 0px;
+  color: #0C3C60;
+
+}
+.section_one_div button{
+  padding: 10px 20px;
+  outline: none;
+  color: #0C3C60;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid #0C3C60;
+  border-radius: 4px;
+  transition: all ease 1s;
+}
+
+.section_one_div button:hover{
+  background-color: #0C3C60;
+  color: white;
+  
+}
+
+.sec_sec_main{
+  padding-top: 200px;
+}
+
+.sec_sec_ancher h3{
+  color: #0C3C60;
+}
+
+
+.sec_sec_ancher{
+  border: 1px solid #0C3C60;
+  border-radius: 4px;
+}
+
+
+.sec_sec_ancher a{
+  padding: 9px 25px;
+  border: 1px solid #0C3C60;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #0C3C60;
+  font-size: 16px;
+  margin: 30px 30px;
+  transition: all ease 1s;
+}
+
+.sec_sec_ancher a:hover{
+  background-color: #0C3C60;
+  color: white;
+}
+
+.sec_three_one{
+  background-color: white;
+  z-index: 5;
+  opacity: 0.3;
+  /* position: relative; */
+}
+
+.sec_three_one img{
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.main_parent{
+  position: relative;
+}
+.sec_three_two{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  z-index: 99;
+  width: 50%;
+  color: black;
+}
+.sec_three_two a{
+  text-align: center;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #0C3C60;
+  border:1px solid #0C3C60;
+  border-radius: 4px;
+  font-size: 17px;
+  transition: all ease 1s;
+  margin-top: 40px;
+}
+
+.sec_three_two a:hover{
+  background-color: #0C3C60;
+  color: white;
+}
+.carousel .first_owl .skill_div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.input_one{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 2px ;
+  border-bottom: 1px solid white;
+  color: white;
+  transition: all ease 0.5s;
+}
+
+.input_one:hover{
+  border-bottom: 2px solid white;
+  
+}
+
+.textareaMain{
+  background-color: transparent;
+  padding: 3px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  color: white;
+  transition: all ease 0.5s;
+}
+
+.textareaMain:hover{
+  border-bottom: 2px solid white;
+
+}
+
+.btnSubmit{
+  border: none;
+  outline:none;
+  padding: 15px 60px;
+  font-size: 15px;
+  color: #0C3C60;
+  background-color: #fff;
+  transition: all ease 0.5s;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.btnSubmit:hover{
+  background-color: #0C3C60;
+  color: #fff;
+}
+
+.first_div ul{
+  padding-left: 0px;
+}
+
+.first_div li{
+  list-style-type: none;
+}
+
+.first_div li:hover{
+  color: #3894da;
+}
+
+.about_main_img img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.about_main_heaing h1{
+  font-size: 50px;
+  color: #0C3C60;
+}
+.secondAbout_image{
+  width: 100%;
+  /* height: 400px; */
+}
+
+.section_wrapper span{
+  color: #0C3C60;
+  font-weight: 700;
+}
+.section_wrapper_project h3{
+  color: #0C3C60;
+  font-weight: 700;
+}
+.section_wrapper_project h1{
+  color: #0C3C60;
+  font-size: 50px;
+}
+.section_wrapper_project{
+  margin: 0 auto;
+}
+.service_wrapper{
+  border: 1px solid black;
+
+}
+.serviceSection h1{
+  color: #0C3C60;
+  font-size: 50px;
+}
+.service_wrapper h3{
+  color: #0C3C60;
+
+}
+.service_wrapper button{
+  padding: 5px 20px;
+  border: 1px solid #0C3C60;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #0C3C60;
+  font-size: 16px;
+  transition: all ease 1s;
+}
+.service_wrapper button:hover{
+  background-color: #0C3C60;
+  color: #fff;
+}
+
+.plan_wrapperOne h1{
+  color: #0C3C60;
+  font-size: 50px;
+  font-weight: 700;
+}
+.plan_wrapperOne p{
+  color: #0C3C60;
+  font-size: 14px;
+  font-weight: 500;
+}
+.main_plan2{
+  height: 0%;
+  transition: all ease 0.5s;
+}
+
+.styling{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all ease 0.5s;
+}
+
+.plan_wrapperTwo{
+  border: 1px solid rgb(183, 182, 182);
+  /* gap: 40px; */
+  height: 650px;
+}
+
+.plan_wrapperThree{
+  background-color: #EAF1F7;
+  position: relative;
+}
+
+.head_title{
+  position: absolute;
+  top: 0%;
+  right: 0;
+  left: 0;
+  padding: 3px 4px;
+  color: #fff;
+  background-color: #0C3C60;
+
+}
+.plan_wrapperTwo h5{
+  color: #0C3C60;
+  font-weight: 400;
+}
+.plan_wrapperTwo strong{
+  color: #0C3C60;
+  font-weight: 600;
+  font-size: 60px;
+}
+.dollerSetParent{
+  position: relative;
+}
+.dollerSetChild{
+  position: absolute;
+  top: 0;
+  left: 37%;
+  color: #0C3C60;
+}
+.plan_wrapperTwo span, small{
+  color: #0C3C60;
+  /* font-size: 14px; */
+}
+.plan_wrapperTwo  button{
+  border: none;
+  outline: none;
+  padding: 7px 80px;
+  color: aliceblue;
+  border-radius: 4px;
+  background-color: #0C3C60;
+
+}
+.plan_wrapperTwo  button:hover{
+  background-color: #399be7;
+}
+.firstTool_wrapper{
+  margin: 0 auto;
+}
+
+.firstTool_wrapper h1{
+  color: #0C3C60;
+  font-size: 45px;
+}
+.firstTool_wrapper p{
+  color: #0C3C60;
+  font-size: 15px;
+}
+
+.navbar_main{
+  display: flex;
+  transition: 1s ease-in;
+
+}
+
+.navbar_main li{
+  padding: 0px 3px;
+}
+.navbar_main span:hover{
+  color: #80bae8;
+}
+.navbar_main i:hover{
+  color: #80bae8;
+}
+
+.nav__toggler{
+  display: none;
+}
+.nav__toggler div {
+  width: 30px;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(204, 204, 204);
+  transition: 0.3s ease-in;
+}
+
+.main_loginForm{
+ margin: 0 auto;
+ width: 100%;
+ border: 1px solid gray;
+ border-radius: 10px;
+ margin-top: 150px;
+
+}
+.main_loginForm h3{
+  color: #0C3C60;
+  font-size: 3rem;
+}
+.main_loginForm input{
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 5px 20px;
+    margin-top: 3px;
+}
+
+.main_loginForm button{
+  padding: 1px 82px;
+  color: white;
+  background-color: #0C3C60;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 4px;
+  transition: all ease 1s;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.main_loginForm button:hover{
+  background-color: #1b5887;
+}
+
+.main_loginForm a{
+  color: #0071c7;
+}
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+  .nav__toggler{
+    display: block;
+    cursor: pointer;
+  }
+ 
+  .navbar_main{
+    display: none;
+    transition: all ease 1s;
+  }
+  .navbar_main2{
+    display: block;
+    position: absolute;
+    top: 99%;
+    background-color: #0C3C60;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    transform: translateY(0%);
+    transition: 1s ease-in-out;
+  }
+  .navbar_main2 li{
+    margin-bottom: 10px;
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 5px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-8px, -9px);
+  }
+
+
+  .main_contact{
+    margin-top: 100px;
+  }
+  .plan_wrapperOne h1 {
+    color: #0C3C60;
+    font-size: 33px;
+    font-weight: 700;
+}
+}

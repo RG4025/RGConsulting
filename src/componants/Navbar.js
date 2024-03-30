@@ -192,3 +192,6 @@ function Navbar(){
 }
 
 export default Navbar;
+
+
+// "homepage": "https://RG4025.github.io/RGConsulting",

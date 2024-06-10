@@ -181,7 +181,6 @@ export default function SecondTool() {
   function finding(rg){
       const newData = data.filter(row =>{
         return ( row.name.toLowerCase().includes(rg.target.value.toLowerCase()));
-      
       })
 
       setFind(newData);

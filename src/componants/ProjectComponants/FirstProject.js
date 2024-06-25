@@ -1,7 +1,11 @@
 import React from "react";
-
-
+// import { socketConnect } from "sockettwo";
 export default function FirstProject() {
+  // const status = socketConnect("https://ride.reapmind.com");
+  // if (status) {
+  //   console.log(`The socket are connected successfully! on: ${status}`);
+  // }
+  
   const ourProject = [
     {
       imgUrl:
@@ -31,33 +35,36 @@ export default function FirstProject() {
 
   return (
     <>
-
       <section className=" my-sm-5 pt-sm-5 main_contact">
         <div className="container mt-sm-5 section_wrapper_project">
-
-            <div className="text-center mb-5">
-                <h1 style={{fontSize:"50px",color:''}}>PROJECTS</h1>
-            </div>
+          <div className="text-center mb-5">
+            <h1 style={{ fontSize: "50px", color: "" }}>PROJECTS</h1>
+          </div>
 
           <div className="row ">
-            {
-            ourProject.map((rg,key) => {
+            {ourProject.map((rg, key) => {
               return (
-                <div className="my-2 my-sm-5 col-12 col-md-5 section_wrapper_project" key={key}>
-                    <div className="container">
-
-                  <figure>
-                    <div className="secondAbout_image">
-                      <img src={rg.imgUrl} alt="Project" className="img-fluid" />
-                    </div>
-                    <figcaption>
-                      <div className="container text-left">
-                        <h3 className="my-4">{rg.name}</h3>
-                        <p className="mt-3">{rg.para}</p>
+                <div
+                  className="my-2 my-sm-5 col-12 col-md-5 section_wrapper_project"
+                  key={key}
+                >
+                  <div className="container">
+                    <figure>
+                      <div className="secondAbout_image">
+                        <img
+                          src={rg.imgUrl}
+                          alt="Project"
+                          className="img-fluid"
+                        />
                       </div>
-                    </figcaption>
-                  </figure>
-                    </div>
+                      <figcaption>
+                        <div className="container text-left">
+                          <h3 className="my-4">{rg.name}</h3>
+                          <p className="mt-3">{rg.para}</p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               );
             })}

@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
 import { sendAlert } from "../../App";
 
-
 export default function FirstService() {
-
   const getAlert = useContext(sendAlert);
 
   const serviceData = [
@@ -25,42 +23,45 @@ export default function FirstService() {
 
   return (
     <>
-      <section className=" serviceSection pt-2 pt-sm-3 main_contact" >
+      <section className=" serviceSection pt-2 pt-sm-3 main_contact">
         <div className="container">
           <div className="text-center my-1 my-sm-5">
             <h1 className="py-5">SERVICES</h1>
           </div>
 
-          {serviceData.map((rg,key) => {
+          {serviceData.map((rg) => {
             return (
-              <>
-                <div className="container my-1 my-sm-5 pb-md-5" key={key}>
-                  <div className="container">
-                    <div className="d-md-flex service_wrapper">
-                      <div className="w-100">
-                        <img
-                          src={rg.imgSrc}
-                          alt="serviceImage"
-                          className="img-fluid"
-                        />
-                      </div>
+              <div className="container my-1 my-sm-5 pb-md-5" key={rg.imgSrc}>
+                <div className="container">
+                  <div className="d-md-flex service_wrapper">
+                    <div className="w-100">
+                      <img
+                        src={rg.imgSrc}
+                        alt="serviceImage"
+                        className="img-fluid"
+                      />
+                    </div>
 
-                      <div className="container d-flex justify-content-center ">
-                        <div className="text-left mt-5">
-
+                    <div className="container d-flex justify-content-center ">
+                      <div className="text-left mt-5">
                         <h3 className="my-3">{rg.heading}</h3>
 
                         <span className="py-3">{rg.time} hr</span>
-                        <br/>
+                        <br />
                         <span className="my-3">${rg.price}</span>
-                        <br/>
-                        <button type="button" className="mt-4" onClick={getAlert}>Book Now</button>
-                        </div>
+                        <br />
+                        <button
+                          type="button"
+                          className="mt-4"
+                          onClick={getAlert}
+                        >
+                          Book Now
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>

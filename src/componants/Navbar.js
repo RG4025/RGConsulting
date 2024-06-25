@@ -72,7 +72,6 @@ function Navbar(){
             <ul className={nav}>
               {navbar.map((rg, i) => {
                 if(true){
-
                   if (rowLen === i + 8) {
                     return (
                       <li className="nav-item" key={rg}>

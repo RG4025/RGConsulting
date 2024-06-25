@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* For Webkit browsers */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #aa28e7;
+  display: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #aa28e7;
+  border-radius: 20px;
+  display: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #aa28e7;
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #aa28e7 #ffffff;
+  scrollbar-arrow-color: transparent;
+  resize: none;
+}
